@@ -24,6 +24,7 @@ where PrivilegeMasterKey in<br/>
 <3>根据privilegemasterkey和privilegeaccess查询cf_privilege表。<br/>
 <4>获取privilegeID和menuname。<br/>
 <h3>（3）执行结果</h3><br/>
+![](https://github.com/cxins/six/blob/master/2.PNG)<br/>
 <h2>2.查询用户test1对订单(order)页面中的操作权限</h2><br/>
 <h3>（1）SQL语句</h3><br/>
 SELECT * FROM sys_button<br/>
@@ -55,3 +56,4 @@ where MenuNo=<br/><br/>
 <6>获取按钮权限。<br/>
 
 <h3>（3）执行结果</h3><br/>
+![](https://github.com/cxins/six/blob/master/3.PNG)<br/>
