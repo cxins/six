@@ -8,16 +8,16 @@ where MenuID in<br/>
 (SELECT PrivilegeAccessKey <br/>
 FROM cf_privilege <br/>
 where PrivilegeMasterKey in<br/>
-    (SELECT RoleID <br/>
-    FROM cf_role <br/>
-    where RoleID in<br/>
-        (SELECT RoleID <br/>
-        FROM cf_userrole <br/>
-        where UserID in<br/>
-            (SELECT UserID <br/>
-            FROM cf_user <br/>
-            where LoginName='test1')))<br/>
-and PrivilegeAccess='Sys_Menu');<br/>
+     (SELECT RoleID <br/>
+     FROM cf_role <br/>
+     where RoleID in<br/>
+         (SELECT RoleID <br/>
+         FROM cf_userrole <br/>
+         where UserID in<br/>
+             (SELECT UserID <br/>
+             FROM cf_user <br/>
+             where LoginName='test1')))<br/>
+  and PrivilegeAccess='Sys_Menu');<br/>
 <h3>（2）伪代码</h3><br/>
 <1>输入用户名称test1，查询user表。<br/>
 <2>根据人员编号userID查询userrole表。<br/>
